@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright Copyright (C) 2015-2023 AIZAWA Hina
+ * @copyright Copyright (C) 2015-2024 AIZAWA Hina
  * @license https://github.com/fetus-hina/stat.ink/blob/master/LICENSE MIT
  * @author AIZAWA Hina <hina@fetus.jp>
  */
@@ -34,6 +34,7 @@ use yii\db\ActiveRecord;
  * @property SalmonWeapon3 $salmonWeapon3
  * @property EventSchedule3[] $schedules
  * @property Special3 $special
+ * @property Splatfest3StatsWeapon[] $splatfest3StatsWeapons
  * @property StatWeapon3AssistPerVersion[] $statWeapon3AssistPerVersions
  * @property StatWeapon3Assist[] $statWeapon3Assists
  * @property StatWeapon3DeathPerVersion[] $statWeapon3DeathPerVersions
@@ -139,6 +140,11 @@ class Weapon3 extends ActiveRecord
     public function getSpecial(): ActiveQuery
     {
         return $this->hasOne(Special3::class, ['id' => 'special_id']);
+    }
+
+    public function getSplatfest3StatsWeapons(): ActiveQuery
+    {
+        return $this->hasMany(Splatfest3StatsWeapon::class, ['weapon_id' => 'id']);
     }
 
     public function getStatWeapon3AssistPerVersions(): ActiveQuery

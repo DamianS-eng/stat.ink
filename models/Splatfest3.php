@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright Copyright (C) 2015-2023 AIZAWA Hina
+ * @copyright Copyright (C) 2015-2024 AIZAWA Hina
  * @license https://github.com/fetus-hina/stat.ink/blob/master/LICENSE MIT
  * @author AIZAWA Hina <hina@fetus.jp>
  */
@@ -25,6 +25,7 @@ use yii\db\ActiveRecord;
  * @property SplatfestCamp3[] $camps
  * @property Splatfest3StatsPower $splatfest3StatsPower
  * @property Splatfest3StatsPowerHistogram[] $splatfest3StatsPowerHistograms
+ * @property Splatfest3StatsWeapon[] $splatfest3StatsWeapons
  * @property SplatfestTeam3[] $splatfestTeam3s
  */
 class Splatfest3 extends ActiveRecord
@@ -69,6 +70,11 @@ class Splatfest3 extends ActiveRecord
     public function getSplatfest3StatsPowerHistograms(): ActiveQuery
     {
         return $this->hasMany(Splatfest3StatsPowerHistogram::class, ['splatfest_id' => 'id']);
+    }
+
+    public function getSplatfest3StatsWeapons(): ActiveQuery
+    {
+        return $this->hasMany(Splatfest3StatsWeapon::class, ['fest_id' => 'id']);
     }
 
     public function getSplatfestTeam3s(): ActiveQuery
