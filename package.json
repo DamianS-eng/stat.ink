@@ -26,7 +26,7 @@
     "flot": "~0.8.3",
     "inputmask": "^5.0.10",
     "jdenticon": "^3.3.0",
-    "jquery": "^3.7.1",
+    "jquery": "^3.8.0",
     "jquery-color": "^3.0.0",
     "jquery-smooth-scroll": "^2.2.0",
     "luxon": "^3.7.2",
