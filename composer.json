@@ -21,8 +21,8 @@
     "ext-uri": "*",
     "ext-zlib": "*",
     "cweagans/composer-patches": "^1.7.3",
-    "geoip2/geoip2": "^3.4.0",
-    "guzzlehttp/guzzle": "^7.16.1",
+    "geoip2/geoip2": "^3.5.0",
+    "guzzlehttp/guzzle": "^7.17.0",
     "jaybizzle/crawler-detect": "^1.4.3",
     "jp3cki/mb_str_replace": "^4.0.2",
     "jp3cki/uuid": "^6.0.0",
@@ -39,8 +39,8 @@
     "league/oauth2-google": "^5.0",
     "lipis/flag-icons": "^7.6.0",
     "markrogoyski/math-php": "^2.13.0",
-    "paragonie/constant_time_encoding": "^3.1.4",
-    "php-curl-class/php-curl-class": "^13.0.2",
+    "paragonie/constant_time_encoding": "^3.1.5",
+    "php-curl-class/php-curl-class": "^13.1.0",
     "statink/yii2-anonymizer": "^1.0.4",
     "statink/yii2-bukiicons": "^1.0.1",
     "statink/yii2-cal-heatmap": "^2.1.1",
@@ -51,7 +51,7 @@
     "statink/yii2-spl1-stages": "^1.0.3",
     "statink/yii2-spl2-stages": "^1.0.2",
     "statink/yii2-twitter-webintents": "^1.0.3",
-    "symfony/yaml": "^8.1.11",
+    "symfony/yaml": "^8.1.12",
     "twbs/bootstrap-icons": "^1.13.2",
     "wohali/oauth2-discord-new": "^1.2.1",
     "yiisoft/yii2": "^2.0.55",
@@ -68,7 +68,7 @@
     "codeception/specify": "^2.0.0",
     "codeception/verify": "^3.4.0",
     "cotonet/soak-time": "1.1.0",
-    "ergebnis/composer-normalize": "^2.57.0",
+    "ergebnis/composer-normalize": "^2.59.0",
     "jp3cki/coding-standard": "^2.0.0",
     "mspirkov/yii2-phpstan": "~0.15.2",
     "nikic/php-parser": "^4.19.5 || ^5.9.0",
@@ -156,7 +156,7 @@
       "yiisoft/yii2-composer": true
     },
     "platform": {
-      "php": "8.5.12"
+      "php": "8.5.13"
     },
     "process-timeout": 1800
   },
